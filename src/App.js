@@ -12,32 +12,32 @@ class ClapTyper extends Component {
     }
   }
 
-  onChange(text) {
+  _onChange(text) {
     this.setState({
       text: text
     })
   }
 
-  onSelectChange(emoji) {
+  _onSelectChange(emoji) {
     this.setState({
       emoji: emoji
     })
   }
 
-  changeText(text) {
-    return text.split(/\s+/).join('{this.state.emoji}');
+  _changeText(text) {
+    return text.split(/\s+/).join(' ' + this.state.emoji + ' ');
   }
 
   render() {
     return(
       <div>
-        <input type="text" onChange={(e) => this.onChange(e.target.value)}></input>
-        <select value={this.state.emoji} onChange={(e) => this.onSelectChange(e.target.value)}>
+        <input type="text" onChange={(e) => this._onChange(e.target.value)}></input>
+        <select value={this.state.emoji} onChange={(e) => this._onSelectChange(e.target.value)}>
           <option>👏</option>
           <option>✋</option>
           <option>🖖</option>
         </select>
-        <textarea value={this.changeText(this.state.text)}></textarea>
+        <textarea value={this._changeText(this.state.text)}></textarea>
       </div>
     )
   }
