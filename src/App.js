@@ -45,7 +45,7 @@ class emojiTyper extends Component {
         <a href={"https://twitter.com/intent/tweet?text=" + this._changeText(this.state.text)}>Tweet</a>
         <br></br>
         <br></br>
-        <p>This isn't my idea. Reverse engineered from <a href="https://github.com/marcusmolchany/clap-typer">Marcus Molchany</a> for fun</p>
+        <p>This isn’t my idea. Reverse engineered from <a href="https://github.com/marcusmolchany/clap-typer">Marcus Molchany</a> for fun</p>
       </div>
     )
   }
