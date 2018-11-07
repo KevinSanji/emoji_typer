@@ -17,6 +17,10 @@ input, select, textarea {
   border-width: 3px !important;
 }
 
+textarea {
+  padding: 1.1rem;
+}
+
 select {
   height: 50px;
 }
