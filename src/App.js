@@ -42,7 +42,7 @@ class emojiTyper extends Component {
           <option value="👏🏿">👏🏿</option>
         </select>
         <textarea placeholder="Because of an extremely complex algorithm, your shit will now have emojis in it" value={this._changeText(this.state.text)}></textarea>
-        <a href="">Tweet</a>
+        <a href={"https://twitter.com/intent/tweet?text=" + this._changeText(this.state.text)}>Tweet</a>
         <br></br>
         <br></br>
         <p>This isn't my idea, reverse engineered from <a href="https://github.com/marcusmolchany/clap-typer">Marcus Molchany</a> for fun</p>
